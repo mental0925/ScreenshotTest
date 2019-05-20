@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2014-present, Facebook, Inc.
+ All rights reserved.
+
+ This source code is licensed under the license found in the
+ LICENSE-examples file in the root directory of this source tree.
+-->
+
+
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:hint="Search the world" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="112dp"
+        android:text="Search!"
+        app:layout_constraintStart_toEndOf="@+id/search_box"
+        tools:layout_editor_absoluteY="-5dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:layout_weight="1"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/search_box"
+        tools:layout_editor_absoluteX="26dp" />
+</android.support.constraint.ConstraintLayout>
