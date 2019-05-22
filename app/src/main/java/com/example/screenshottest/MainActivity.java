@@ -23,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         123
+<<<<<<< HEAD
         commit master2
+=======
+        commit master
+        commit cat
+>>>>>>> cat
         */
     }
 }
